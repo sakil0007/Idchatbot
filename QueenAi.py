@@ -14,8 +14,8 @@ import os
 import re
 
 
-API_ID = os.environ.get("API_ID", "15599295") 
-API_HASH = os.environ.get("API_HASH", "4ce42998f7df4a64934294dadca28ae0") 
+API_ID = os.environ.get("API_ID", "21966647") 
+API_HASH = os.environ.get("API_HASH", "cf9724197b0d6e7d8a53e46763b34fd1") 
 SESSION_NAME = os.environ.get("SESSION_NAME", "")
 MONGO_URL = os.environ.get("MONGO_URL", "") 
 
@@ -38,21 +38,21 @@ async def chatbot(client, message):
     umm = await message.reply_sticker("CAACAgUAAxkBAALyX2QqjZ4PYInIurslUHkSeoHDtslIAAKpCAACeURZVXSsBGaFz_JTLwQ")
     await asyncio.sleep(2)
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/a406783ab421e5c53ab13.jpg",
+        photo=f"https://telegra.ph/file/c8510dc787aa503705ea1.jpg",
         caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━
 👻 A ᴘᴏᴡᴇʀғᴜʟ ᴀɪ ʙᴏᴛ
-ᴏғ ♻️ 𝐌𝐑 𝐀𝐘𝐔𝐒𝐇 ♥️
+ᴏғ ♻️ 𝗠𝗥 𝗦𝗔𝗞𝗜𝗟 ♥️
 ━━━━━━━━━━━━━━━━━
 ᴅᴀᴛᴀʙᴀsᴇ ʙᴀᴄᴋᴇɴᴅ ʙᴏᴛ ғᴏʀ ᴛɢ...
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴇʀ [𝐌𝐑 𝐀𝐘𝐔𝐒𝐇](https://t.me/Venom_bolte_public)
-┣★ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/Heroku_Dyno)
-┣★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [ᴄʜᴀᴛ](https://t.me/Its_Venom_family)
+┣★ ᴄʀᴇᴀᴛᴇʀ [𝗠𝗥 𝗦𝗔𝗞𝗜𝗟](https://t.me/VipBots007)
+┣★ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs [ᴏᴜʀ ᴏᴛʜᴇʀ ʙᴏᴛs](https://t.me/VipBots007)
+┣★ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ [ᴄʜᴀᴛ](https://t.me/VipBots007)
 ┗━━━━━━━━━━━━━━━━━┛
 🥵
-IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Venom_bolte_public""",
+IF HAVE ANY QUESTION THEN CONTACT » TO » MY » [OWNER] @Its_Me_SakiL""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟", url=f"https://t.me/Its_Venom_family")]]
+            [[InlineKeyboardButton("💟 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ 💟", url=f"https://t.me/Its_Me_SakiL")]]
         ),
     ) 
 @client.on_message(filters.command("stats"))
@@ -95,7 +95,7 @@ async def queenai(client: Client, message: Message):
 
    if not message.reply_to_message:
        queendb = MongoClient(MONGO_URL)
-       queen = queendb["QueenDb"]["Queen"] 
+       queen = queendb["AyshaDb"]["Aysha"] 
        is_queen = queen.find_one({"chat_id": message.chat.id})
        if not is_queen:
            await client.send_chat_action(message.chat.id, "typing")
@@ -115,7 +115,7 @@ async def queenai(client: Client, message: Message):
    
    if message.reply_to_message:  
        queendb = MongoClient(MONGO_URL)
-       queen = queendb["QueenDb"]["Queen"] 
+       queen = queendb["AyshaDb"]["Aysha"] 
        is_queen = queen.find_one({"chat_id": message.chat.id})    
        getme = await client.get_me()
        user_id = getme.id                             
@@ -161,7 +161,7 @@ async def queenstickerai(client: Client, message: Message):
 
    if not message.reply_to_message:
        queendb = MongoClient(MONGO_URL)
-       queen = queendb["QueenDb"]["Queen"] 
+       queen = queendb["AysahDb"]["Aysha"] 
        is_queen = queen.find_one({"chat_id": message.chat.id})
        if not is_queen:
            await client.send_chat_action(message.chat.id, "typing")
@@ -181,7 +181,7 @@ async def queenstickerai(client: Client, message: Message):
    
    if message.reply_to_message:
        queendb = MongoClient(MONGO_URL)
-       queen = queendb["QueenDb"]["Queen"] 
+       queen = queendb["AyshaDb"]["Aysha"] 
        is_queen = queen.find_one({"chat_id": message.chat.id})
        getme = await client.get_me()
        user_id = getme.id
