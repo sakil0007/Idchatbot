@@ -16,8 +16,8 @@ import re
 
 API_ID = os.environ.get("API_ID", "21966647") 
 API_HASH = os.environ.get("API_HASH", "cf9724197b0d6e7d8a53e46763b34fd1") 
-SESSION_NAME = os.environ.get("SESSION_NAME", "BQB-6Cwe3j6gPXQ1IO3B7R8APRa0-U2Hop3kdPzbeykM-EWbqD-tBDEMoRvbDdUnEzoiaj3Nlx6KPPgqgRV2DivPzXtrhG6rVDxq8dpd3Gf3zm-vIOQnl4OZghsOMRK5ryWvuwccNiQRAKOGC05jUJw2OonK0IAqseF-cKGBgsJoQ6QoWJla45n2mzYd5IFjetH60TK_iwzjyb4kDSf7vO-Tmx2QDBtUTJd5Rx_PfFmET9Th7re3MMwA2cdcGBoWGjs8eII2qCmWx3jYZYkxoK5jvQOG-WSYA8yOAeRbldz-ajFoCbQyxr9K4hv-B86JKLseYXMX4qr0l6GbNoct7el3AAAAAUxuCvAA")
-MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://okvaiok:okvaiok@cluster0.nokzouz.mongodb.net/?retryWrites=true&w=majority") 
+SESSION_NAME = os.environ.get("SESSION_NAME", "BQCwIo7QQFSiLm9EkQ2pMCyyklS_s_R8PWm30QZ805OEyrlZv2rGrqz74-W1lSkpgtMix5NWnl63EIxr76uqDIPcaX9s0ptNikWd3R6p-_cbvXtlXcUOJRrQyrqk_1cDwNdCMgiPQttOTiVj54rUnY3ksi-X2nLuQwFYaL07w-ARDKfjR2-g6Sne25GZoIhp1qIXp7bTk6bczuX3XaLtByNORu2cwlAYexFVXVDKjQn9Eve6Zlh03ItDZGG2gRCFYsMevqE20OVSKYARj_2fMrzPHjxqAgGUlZsX3WNU5d5BPxSyviYSLImwYB4k9YPUu7TKlz-LgoI1PchfwH4hk97_AAAAAUxuCvAA")
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://sakilanowar78:atIAQ0iJ2bwlMig7@cluster0.1mqytch.mongodb.net/?retryWrites=true&w=majority") 
 
 
 client = Client(SESSION_NAME, API_ID, API_HASH)
